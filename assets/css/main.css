@@ -1,0 +1,259 @@
+/*
+  General Styles
+ */
+
+:root {
+  --bs-font-sans-serif: Poppins, sans-serif;
+  --bs-primary: #8490ff;
+  --bs-secondary: #62bdfc;
+  --bs-secondary-rgb: 98, 189, 252;
+  --bs-light: #f9f9ff;
+  --bs-dark: #04091e;
+  --bs-dark-rgb: 4,9,30;
+  /* Todo: Change direction to (to right) */
+  --bs-gradient: linear-gradient(to right, #8490ff 0%, #62bdfc 100%);
+}
+
+
+body {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a:hover {
+  --bs-link-hover-color: var(--bs-primary);
+}
+
+button {
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  border: 0;
+}
+
+
+/*
+  Utility Classes
+ */
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.fs-7 {
+  font-size: 3rem;
+}
+
+.transition-colors {
+  transition: background 150ms, color 300ms;
+}
+
+.transition-all {
+  transition: all 500ms;
+}
+
+.hide {
+  width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/*
+  Components Styles
+ */
+
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-title-sm {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  border-radius: 0;
+  border: none;
+  text-transform: uppercase;
+  background: var(--bs-gradient);
+  padding: 0.7rem 1.2rem;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+}
+
+.container {
+  --bs-gutter-x: 1.8rem;
+}
+
+/*
+  Navbar
+ */
+
+.navbar {
+  --bs-navbar-active-color: var(--bs-primary);
+  --bs-navbar-color: var(--bs-black);
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: var(--bs-primary);
+}
+
+.nav-link {
+  --bs-nav-link-font-weight: 300;
+}
+
+/*
+  Sidebar
+ */
+
+.offcanvas {
+  --bs-offcanvas-bg: rgba(0, 0, 0, 0.95);
+  --bs-offcanvas-width: 50%;
+}
+
+
+/*
+  Main
+ */
+
+
+/*
+  Header
+ */
+
+
+/*
+  My Services
+ */
+
+#my-services .service:hover a,
+#my-services .service:hover svg {
+  color: var(--bs-primary);
+
+}
+
+
+/*
+  Our Latest Projects
+ */
+
+#latest-projects .projects-list button:hover,
+#latest-projects .projects-list button.active {
+  color: var(--bs-primary);
+}
+
+/*
+                                        Feedback Slider
+ */
+/* .carousel slide{
+  position: relative;
+} */
+.single-slide .img-fluid{
+  width: 40px;
+  height: 40px;
+  margin: 25px;
+  margin-right: 65px;
+  border-radius: 50%;
+}
+.carousel-control-prev{
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-primary);
+}
+.carousel-control-next{
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-primary);
+}
+
+.desc a{
+font-weight: bold;
+}
+
+
+/*
+                                        Pricing
+ */
+
+.single-price:hover{
+  scale: 1.05;
+  background-image: var(--bs-gradient);
+  color: white;
+  transition: all 0.2s ease-out;
+}
+.single-price .bottom-part a{
+  display: none;
+}
+.single-price .circle1{
+  margin: auto;
+  height: 7em;
+  width: 7em;
+  background-color: rgb(132 144 255 / 30%);
+}
+.single-price .circle2{
+  margin: auto;
+  height: 4em;
+  width: 4em;
+}
+
+.single-price:hover .circle1{
+  background-color:var(--bs-light);
+}
+.single-price:hover .circle2{
+  background-image: var(--bs-gradient);
+}
+.single-price:hover .bottom-part h2{
+  display: none;
+}
+.single-price:hover .bottom-part a{
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+/*
+                                        Contact
+ */
+
+#send-btn{
+  float: right;
+  color: white;
+  background-color: var(--bs-primary);
+  margin-top: 1rem;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid var(--bs-primary);
+}
+#send-btn:hover{
+  color: var(--bs-primary);
+  background-color: white;
+  transition: all 0.2s ease-out;
+}
